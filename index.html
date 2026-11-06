@@ -31,7 +31,7 @@
     <div id="status">Loading AR engine...</div>
     
     <a-scene 
-      mindar-image="imageTargetSrc: LT-1939-QR.mind; filterMinCF: 1; filterBeta: 10; missTolerance: 2; warmupTolerance: 2; uiLoading: no; uiScanning: no;" 
+      mindar-image="imageTargetSrc: LT-1939-QR.mind; filterMinCF: 0.001; filterBeta: 0.01; missTolerance: 5; warmupTolerance: 5; uiLoading: no; uiScanning: no;" 
       color-space="sRGB" 
       renderer="colorManagement: true, physicallyCorrectLights: false" 
       vr-mode-ui="enabled: false" 
@@ -43,7 +43,7 @@
         <a-image 
           id="ar-image"
           src="LT-2026.png" 
-          position="0 0 0.05" 
+          position="0 0 0.01" 
           rotation="0 0 0">
         </a-image>
       </a-entity>
